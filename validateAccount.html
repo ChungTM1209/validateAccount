@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateAccount(str) {
+        regexp = /^[_0-9a-z]{6,}$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+
+    var account = "123asd"
+    console.log(validateAccount(account));
+</script>
+</body>
+</html>
